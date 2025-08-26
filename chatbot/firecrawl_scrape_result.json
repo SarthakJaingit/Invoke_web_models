@@ -1,0 +1,25 @@
+{
+  "success": true,
+  "data": {
+    "markdown": "# [Knowledge Base](https://vbotickets.helpdocsite.com/)\n\n- [CRM](https://vbotickets.helpdocsite.com/crm)\n- [Account Credit](https://vbotickets.helpdocsite.com/crm/how-to-use-account-credit)\n\n- Print\n\nThis help doc will cover the account credit feature.\n\n**What is account credit and how is it used?**\n\nAccount credit is adding a credit (money) to a user's profile. It can be added to a user's account by clicking the edit pencil on their account, or by refunding an item to account credit.\n\n**NOTE** \\- if an order has been refunded to account credit - it can no longer be refunded back to the user's credit card or any other refund source. If an order is refunded to account credit, the only way to refund back to the user's credit card (if they originally paid with a credit card for example) is directly from the payment gateway, or by refunding using a different payment method on the promoters end (like writing a check).\n\n**Can I zero out an account credit, add a credit, or edit a credit?**\n\nYes. To edit an account credit on a user's profile, click the pencil under the yellow \"General\" tab on the user's profile.\n\n![](https://s3.us-east-1.amazonaws.com/tw-desk/i/366030/attachment-inline/e39daecb-23a1-4446-806a-9f2b1f1a926b.png)\n\n**How do I use an account credit in the box office?**\n\nIf a user has an account credit, the credit will be a payment option on the final checkout page where you normally select the payment method (credit card, cash, check, etc.). Just make sure the user's account is loaded when processing the order and the account credit will show in the drop down.\n\n![](https://tw-desk-files.teamwork.com/i/366030/attachment-inline/f2db3990-62ef-4313-89ea-3630dc9d9ce9.png)\n\n**Can a patron use their account credit online?**\n\nYes, but only if the promoters plugin is in version 5.0 or higher. Plugin version 4.2 does not support online account credit.\n\nThe patron will see an option to use their account credit on the final payment screen where credit cards and gift cards are entered.\n\n![Image Placeholder](https://vbotickets.helpdocsite.com/desk/file/6177305/2021-09-03_15-02-38.png)\n\n**What reports are available for Account credit?**\n\n**﻿**\n\nTo run an account credit report go to REPORTS > CUSTOM PATRON REPORT. Click **ADD REPORT** on the top right and select the outputs: AccountID, First Name, Last Name, and Account Credit - then click the checkbox \"only credits.\" You can then export the list and it will show accounts with their account credit balances.\n\n[How to use the custom patron report](https://vbotickets.helpdocs.com/reports/how-to-use-the-custom-patron-report)\n\n﻿\n\nThe custom sales report can show when an account credit was used on an order.",
+    "metadata": {
+      "og:site_name": "VBO Tickets Support",
+      "title": "Account Credit - VBO Tickets Support",
+      "viewport": "width=device-width, initial-scale=1",
+      "ogSiteName": "VBO Tickets Support",
+      "favicon": "https://tw-desk-files.teamwork.com/i/366030/docfavicon/126481.20180503235722094.126481.20180503235722094yyQ1H.png",
+      "scrapeId": "04d9ec61-9a9c-4e4f-876a-87d519ad4d5c",
+      "sourceURL": "https://vbotickets.helpdocsite.com/crm/how-to-use-account-credit",
+      "url": "https://vbotickets.helpdocsite.com/crm/how-to-use-account-credit",
+      "statusCode": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "proxyUsed": "basic",
+      "cacheState": "hit",
+      "cachedAt": "2025-08-26T20:04:57.053Z",
+      "creditsUsed": 5
+    },
+    "json": {
+      "haveFeature": true
+    }
+  }
+}
