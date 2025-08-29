@@ -43,3 +43,37 @@ class PageBools(BaseModel):
             "Does this page talk about a specific feature you can do with this companies product"
         )
     )
+
+
+# Q and A pydantic structure
+
+class QAPair(BaseModel):
+    question: str = Field(..., description="A user-style question about the product or feature described on the page.")
+    answer: str = Field(..., description="A direct, grounded answer based on the page content.")
+    category: Optional[str] = Field(None, description="Optional tag: e.g. pricing, usage, limitations, setup.")
+    source_snippet: Optional[str] = Field(None, description="The exact or summarized snippet the answer is based on.")
+    # paraphrases: Optional[List[str]] = Field(None, description="Alternative phrasings of the same question.")
+
+class PageQA(BaseModel):
+    url: str = Field(..., description="The URL of the page being processed.")
+    title: str = Field(..., description="The title or topic of the page.")
+    faqs: List[QAPair] = Field(..., description="List of rich question-answer pairs extracted from this page.")
+
+# Advanced Q and A pydantic structure
+
+# class QAVariant(BaseModel):
+#     question: str = Field(..., description="A different but somewhat related version of the main question.")
+#     answer: str = Field(..., description="A direct, grounded answer based on the page content.")
+#     source_snippet: Optional[str] = Field(None, description="The exact snippet the answer is based on.")
+
+# class QAPair(BaseModel):
+#     question: str = Field(..., description="A user-style question about the product or feature described on the page.")
+#     answer: str = Field(..., description="A direct, grounded answer based on the page content.")
+#     category: Optional[str] = Field(None, description="Optional tag: e.g. pricing, usage, limitations, setup.")
+#     source_snippet: Optional[str] = Field(None, description="The exact snippet the answer is based on.")
+#     variants: List[QAVariant] = Field(..., description="List of Q&A variants based on the canonical question.")
+
+# class PageQA(BaseModel):
+#     url: str = Field(..., description="The URL of the page being processed.")
+#     title: str = Field(..., description="The title or topic of the page.")
+#     faqs: List[QAPair] = Field(..., description="List of rich question-answer pairs extracted from this page.")

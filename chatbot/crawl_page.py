@@ -17,21 +17,7 @@ FIRECRAWL_API = "https://api.firecrawl.dev/v2/scrape"
 
 url_to_scrape = "https://vbotickets.helpdocsite.com/crm/how-to-use-account-credit"
 # url_to_scrape = "https://vbotickets.helpdocsite.com/crm"
-utl_to_scrape = "https://www.vbotickets.com/pricing/"
-
-# payload = { 
-#     "url": url_to_scrape,
-#     "formats": ["markdown"],
-#     "onlyMainContent": True,
-#     "blockAds": True, 
-#     "removeBase64Images": True,
-#     "excludeTags": ["nav", "header", "footer", "aside", ".sidebar", "#menu", "script", "style"]
-# }
-
-# payload_prompt= """
-# You are looking at the webpages of a company.
-# Look at the webpage and output a boolean whether this specific page has information on a specific feature of the company.
-# """
+url_to_scrape = "https://www.vbotickets.com/pricing/"
 
 payload_prompt = """
 You are looking at webpages of a company's product or help documentation.
